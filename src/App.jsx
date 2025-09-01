@@ -1,10 +1,9 @@
-import { useState } from 'react'
-function App() {
+import React from 'react'
+import Home from "./component/Home";
 
+function App() {
   return (
-    <>
-      
-    </>
+    <Home />
   )
 }
 
