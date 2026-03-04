@@ -71,7 +71,7 @@ const Footer = () => {
                   href="#" 
                   className="text-3xl font-extrabold text-white hover:text-gray-300 transition-colors duration-300"
                 >
-                  BillaDev
+                  ASSOUMA Billa
                 </a>
                 <p className="mt-3 text-gray-400 leading-relaxed">
                   Développeur Web Fullstack passionné par la création de solutions 
@@ -181,7 +181,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-gray-400 text-sm">
-                &copy; {currentYear} BillaDev. Tous droits réservés.
+                &copy; {currentYear} ASSOUMA Billa. Tous droits réservés.
               </p>
               <p className="text-gray-500 text-xs mt-1">
                 Fait avec <Heart className="inline size-3 text-gray-500" /> par ASSOUMA Z. Billa
