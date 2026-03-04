@@ -35,7 +35,7 @@ const Header = () => {
               href="#" 
               className={`text-3xl font-extrabold transition-all duration-300 ${
                 scrolled 
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:scale-110' 
+                  ? 'bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent hover:scale-110' 
                   : 'text-white hover:text-yellow-300'
               }`}
             >
@@ -53,14 +53,14 @@ const Header = () => {
                   href={item.href} 
                   className={`group relative font-semibold transition-all duration-300 flex items-center px-3 py-2 rounded-lg ${
                     scrolled
-                      ? 'text-gray-700  hover:text-blue-600  hover:bg-blue-50 '
+                      ? 'text-gray-700  hover:text-gray-900  hover:bg-gray-100 '
                       : 'text-white hover:text-yellow-300 hover:bg-white/10'
                   }`}
                 >
                   <Icon className="mr-2 size-4 transition-transform duration-300 group-hover:scale-110" />
                   {item.label}
                   <span className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full ${
-                    scrolled ? 'bg-blue-600 ' : 'bg-yellow-300'
+                    scrolled ? 'bg-gray-700 ' : 'bg-yellow-300'
                   }`}></span>
                 </a>
               );
@@ -76,7 +76,7 @@ const Header = () => {
               href="#contact" 
               className={`inline-flex items-center px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
                 scrolled
-                  ? 'bg-blue-600 text-white hover:bg-blue-700 hover:scale-105'
+                  ? 'bg-gray-700 text-white hover:bg-gray-800 hover:scale-105'
                   : 'bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30 hover:scale-105'
               }`}
             >
@@ -115,7 +115,7 @@ const Header = () => {
                 <a 
                   key={index}
                   href={item.href} 
-                  className="group flex items-center px-4 py-3 font-semibold text-gray-700  hover:text-blue-600  hover:bg-blue-50  rounded-xl transition-all duration-300"
+                  className="group flex items-center px-4 py-3 font-semibold text-gray-700  hover:text-gray-900  hover:bg-gray-100  rounded-xl transition-all duration-300"
                   onClick={() => setOpen(false)}
                 >
                   <Icon className="mr-3 size-5 transition-transform duration-300 group-hover:scale-110" />

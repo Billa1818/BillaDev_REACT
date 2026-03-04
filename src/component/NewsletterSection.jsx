@@ -22,12 +22,12 @@ const NewsletterSection = () => {
   };
 
   return (
-    <section className="section-padding bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 relative overflow-hidden">
+    <section className="section-padding bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 relative overflow-hidden">
       {/* Effets de fond */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-white/5 rounded-full animate-float"></div>
-        <div className="absolute top-40 right-20 w-24 h-24 bg-blue-400/10 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-40 left-20 w-20 h-20 bg-purple-400/10 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-40 right-20 w-24 h-24 bg-gray-500/10 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-40 left-20 w-20 h-20 bg-gray-500/10 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
         <div className="absolute bottom-20 right-10 w-28 h-28 bg-white/5 rounded-full animate-float" style={{animationDelay: '3s'}}></div>
       </div>
 
@@ -35,7 +35,7 @@ const NewsletterSection = () => {
         <div className="max-w-4xl mx-auto text-center animate-fadeInUp">
           {/* Icône décorative */}
           <div className="flex justify-center mb-6">
-            <div className="p-4 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl">
+            <div className="p-4 bg-gradient-to-br from-gray-600 to-gray-800 rounded-2xl">
               <Sparkles className="size-8 text-white" />
             </div>
           </div>
@@ -56,7 +56,7 @@ const NewsletterSection = () => {
             {isSubscribed ? (
               <div className="glass rounded-2xl p-8">
                 <div className="flex items-center justify-center mb-4">
-                  <CheckCircle className="size-12 text-green-400" />
+                  <CheckCircle className="size-12 text-gray-400" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-2">
                   Merci pour votre abonnement !
@@ -85,7 +85,7 @@ const NewsletterSection = () => {
                     className={`flex items-center justify-center px-8 py-4 rounded-xl font-semibold transition-all duration-300 ${
                       isSubmitting
                         ? 'bg-gray-400 cursor-not-allowed'
-                        : 'bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 hover:scale-105'
+                        : 'bg-gradient-to-r from-gray-600 to-gray-800 text-white hover:from-gray-700 hover:to-gray-900 hover:scale-105'
                     }`}
                   >
                     {isSubmitting ? (
@@ -137,7 +137,7 @@ const NewsletterSection = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex justify-center mb-4">
-                    <div className="p-3 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl">
+                    <div className="p-3 bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl">
                       <Icon className="size-6 text-white" />
                     </div>
                   </div>

@@ -9,13 +9,13 @@ const SkillsSection = () => {
     frontend: {
       title: "Développement Frontend",
       icon: Code,
-      color: "from-blue-500 to-cyan-500",
+      color: "from-gray-500 to-gray-600",
       skills: [
-        { name: "HTML/CSS", percentage: 85, color: "bg-blue-500" },
+        { name: "HTML/CSS", percentage: 85, color: "bg-gray-500" },
         { name: "JavaScript", percentage: 80, color: "bg-green-500" },
         { name: "React.js", percentage: 80, color: "bg-cyan-500" },
-        { name: "Tailwind CSS", percentage: 80, color: "bg-purple-500" },
-        { name: "React Native", percentage: 90, color: "bg-indigo-500" },
+        { name: "Tailwind CSS", percentage: 80, color: "bg-gray-500" },
+        { name: "React Native", percentage: 90, color: "bg-gray-600" },
       ]
     },
     backend: {
@@ -33,12 +33,12 @@ const SkillsSection = () => {
     mobile: {
       title: "Applications Mobiles",
       icon: Smartphone,
-      color: "from-purple-500 to-pink-500",
+      color: "from-gray-600 to-gray-700",
       skills: [
-        { name: "React Native", percentage: 85, color: "bg-purple-500" },
+        { name: "React Native", percentage: 85, color: "bg-gray-600" },
         { name: "Capacitor", percentage: 80, color: "bg-pink-500" },
         { name: "Firebase", percentage: 70, color: "bg-orange-500" },
-        { name: "Redux", percentage: 75, color: "bg-indigo-500" },
+        { name: "Redux", percentage: 75, color: "bg-gray-600" },
       ]
     },
     ai: {
@@ -58,15 +58,15 @@ const SkillsSection = () => {
       color: "from-yellow-500 to-orange-500",
       skills: [
         { name: "Git/GitHub", percentage: 85, color: "bg-gray-500" },
-        { name: "Docker", percentage: 60, color: "bg-blue-500" },
+        { name: "Docker", percentage: 60, color: "bg-gray-500" },
         { name: "VPS Management", percentage: 75, color: "bg-green-500" },
-        { name: "CI/CD", percentage: 65, color: "bg-purple-500" },
+        { name: "CI/CD", percentage: 65, color: "bg-gray-600" },
       ]
     },
     web: {
       title: "Développement Web",
       icon: Globe,
-      color: "from-cyan-500 to-blue-500",
+      color: "from-gray-500 to-gray-700",
       skills: [
         { name: "Responsive Design", percentage: 90, color: "bg-cyan-500" },
         { name: "SEO", percentage: 70, color: "bg-green-500" },
@@ -83,6 +83,8 @@ const SkillsSection = () => {
           if (entry.isIntersecting) {
             const category = entry.target.dataset.category;
             setVisibleSkills(prev => ({ ...prev, [category]: true }));
+            // Unobserve après animation pour éviter rechargement
+            observer.unobserve(entry.target);
           }
         });
       },
@@ -115,10 +117,13 @@ const SkillsSection = () => {
           <span className="font-semibold text-gray-700 ">{skill.name}</span>
           <span className="text-sm font-bold text-gray-500 ">{skill.percentage}%</span>
         </div>
-        <div className="w-full bg-gray-200  rounded-full h-3 overflow-hidden">
+        <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
           <div 
             className={`${skill.color} h-3 rounded-full transition-all duration-1000 ease-out progress-bar`}
-            style={{ width: `${width}%` }}
+            style={{ 
+              width: `${width}%`,
+              willChange: 'width'
+            }}
           ></div>
         </div>
       </div>
@@ -130,7 +135,7 @@ const SkillsSection = () => {
       <div className="container mx-auto px-4">
         {/* En-tête de section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">
             Mes compétences
           </h2>
           <p className="text-xl text-gray-600  max-w-3xl mx-auto leading-relaxed">
@@ -188,11 +193,11 @@ const SkillsSection = () => {
               { name: "MongoDB", color: "bg-green-100  text-green-600 " },
               { name: "MySQL", color: "bg-orange-100  text-orange-600 " },
               { name: "Git", color: "bg-gray-100  text-gray-600 " },
-              { name: "Docker", color: "bg-blue-100  text-blue-600 " },
+              { name: "Docker", color: "bg-gray-200  text-gray-700 " },
               { name: "AWS", color: "bg-orange-100  text-orange-600 " },
               { name: "Firebase", color: "bg-yellow-100  text-yellow-600 " },
               { name: "Tailwind", color: "bg-cyan-100  text-cyan-600 " },
-              { name: "Figma", color: "bg-purple-100  text-purple-600 " },
+              { name: "Figma", color: "bg-gray-200  text-gray-700 " },
             ].map((tool, index) => (
               <div 
                 key={index}

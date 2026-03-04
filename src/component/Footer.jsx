@@ -34,29 +34,29 @@ const Footer = () => {
       icon: Linkedin,
       href: "https://linkedin.com/in/z-billa-assouma-b1764931b",
       label: "LinkedIn",
-      color: "hover:bg-blue-600"
+      color: "hover:bg-gray-600"
     },
     {
       icon: Twitter,
       href: "https://twitter.com/billa.assouma.18",
       label: "Twitter",
-      color: "hover:bg-blue-400"
+      color: "hover:bg-gray-500"
     },
     {
       icon: Mail,
       href: "mailto:az9245054@gmail.com",
       label: "Email",
-      color: "hover:bg-red-500"
+      color: "hover:bg-gray-600"
     }
   ];
 
   return (
-    <footer className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-gray-300 overflow-hidden">
+    <footer className="relative bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 text-gray-300 overflow-hidden">
       {/* Effets de fond */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-20 h-20 bg-white/5 rounded-full animate-pulse"></div>
-        <div className="absolute top-20 right-20 w-16 h-16 bg-blue-400/10 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-20 left-20 w-12 h-12 bg-purple-400/10 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-20 right-20 w-16 h-16 bg-gray-500/10 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-20 left-20 w-12 h-12 bg-gray-500/10 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
         <div className="absolute bottom-10 right-10 w-24 h-24 bg-white/5 rounded-full animate-pulse" style={{animationDelay: '3s'}}></div>
       </div>
 
@@ -69,7 +69,7 @@ const Footer = () => {
               <div className="mb-6">
                 <a 
                   href="#" 
-                  className="text-3xl font-extrabold text-white hover:text-blue-400 transition-colors duration-300"
+                  className="text-3xl font-extrabold text-white hover:text-gray-300 transition-colors duration-300"
                 >
                   BillaDev
                 </a>
@@ -82,19 +82,19 @@ const Footer = () => {
               {/* Informations de contact */}
               <div className="space-y-3">
                 <div className="flex items-center text-gray-400">
-                  <MapPin className="size-4 mr-3 text-blue-400" />
+                  <MapPin className="size-4 mr-3 text-gray-400" />
                   <span className="text-sm">Parakou, Bénin</span>
                 </div>
                 <div className="flex items-center text-gray-400">
-                  <Phone className="size-4 mr-3 text-green-400" />
-                  <a href="https://wa.me/22953400160" className="text-sm hover:text-green-400 transition-colors">+229 53 40 01 60</a>
+                  <Phone className="size-4 mr-3 text-gray-400" />
+                  <a href="https://wa.me/22953400160" className="text-sm hover:text-gray-300 transition-colors">+229 53 40 01 60</a>
                 </div>
                 <div className="flex items-center text-gray-400">
-                  <Mail className="size-4 mr-3 text-purple-400" />
-                  <a href="mailto:az9245054@gmail.com" className="text-sm hover:text-purple-400 transition-colors">az9245054@gmail.com</a>
+                  <Mail className="size-4 mr-3 text-gray-400" />
+                  <a href="mailto:az9245054@gmail.com" className="text-sm hover:text-gray-300 transition-colors">az9245054@gmail.com</a>
                 </div>
                 <div className="flex items-center text-gray-400">
-                  <Clock className="size-4 mr-3 text-orange-400" />
+                  <Clock className="size-4 mr-3 text-gray-400" />
                   <span className="text-sm">Lun - Ven, 9h - 18h</span>
                 </div>
               </div>
@@ -143,7 +143,7 @@ const Footer = () => {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`p-3 bg-gray-800 rounded-xl hover:scale-110 transition-all duration-300 ${social.color}`}
+                      className={`p-3 bg-gray-700 rounded-xl hover:scale-110 transition-all duration-300 ${social.color}`}
                       aria-label={social.label}
                     >
                       <Icon className="size-5 text-white" />
@@ -163,7 +163,7 @@ const Footer = () => {
                   href="https://billa-dev-react.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-sm font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300"
+                  className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-gray-600 to-gray-800 text-white text-sm font-semibold rounded-lg hover:from-gray-700 hover:to-gray-900 transition-all duration-300"
                 >
                   <ExternalLink className="mr-2 size-4" />
                   Voir le portfolio
@@ -184,7 +184,7 @@ const Footer = () => {
                 &copy; {currentYear} BillaDev. Tous droits réservés.
               </p>
               <p className="text-gray-500 text-xs mt-1">
-                Fait avec <Heart className="inline size-3 text-red-500" /> par ASSOUMA Z. Billa
+                Fait avec <Heart className="inline size-3 text-gray-500" /> par ASSOUMA Z. Billa
               </p>
             </div>
 

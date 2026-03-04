@@ -4,7 +4,7 @@ import { ArrowRight, Download, Github, Linkedin, Twitter, Mail, Sparkles, Extern
 const HeroSection = () => (
   <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
     {/* Background avec gradient animé */}
-    <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 animate-pulse"></div>
+    <div className="absolute inset-0 bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 animate-pulse"></div>
     
     {/* Effets de particules */}
     <div className="absolute inset-0">
@@ -33,7 +33,7 @@ const HeroSection = () => (
           </h1>
 
           {/* Sous-titre */}
-          <p className="text-xl lg:text-2xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed">
             Spécialisé en développement web, applications mobiles et intelligence artificielle. 
             Je transforme vos idées en réalité numérique.
           </p>
@@ -42,7 +42,7 @@ const HeroSection = () => (
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <a 
               href="#contact" 
-              className="group inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg"
+              className="group inline-flex items-center justify-center px-8 py-4 bg-white text-gray-700 font-bold rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg"
             >
               <Mail className="mr-2 size-5" />
               Démarrer un projet
@@ -52,7 +52,7 @@ const HeroSection = () => (
               href="https://billa-dev-react.vercel.app/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-blue-600 transition-all duration-300 hover:scale-105 backdrop-blur-sm"
+              className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-gray-700 transition-all duration-300 hover:scale-105 backdrop-blur-sm"
             >
               <ExternalLink className="mr-2 size-5" />
               Voir mon portfolio
@@ -63,15 +63,15 @@ const HeroSection = () => (
           <div className="grid grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-1">17+</div>
-              <div className="text-blue-200 text-sm">Projets réalisés</div>
+              <div className="text-gray-300 text-sm">Projets réalisés</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-1">2+</div>
-              <div className="text-blue-200 text-sm">Années d'expérience</div>
+              <div className="text-gray-300 text-sm">Années d'expérience</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-1">100%</div>
-              <div className="text-blue-200 text-sm">Satisfaction client</div>
+              <div className="text-gray-300 text-sm">Satisfaction client</div>
             </div>
           </div>
 
@@ -115,7 +115,7 @@ const HeroSection = () => (
           <div className="relative">
             {/* Cercle décoratif */}
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-yellow-300/20 to-orange-300/20 rounded-full animate-pulse"></div>
-            <div className="absolute -bottom-10 -left-10 w-24 h-24 bg-gradient-to-br from-purple-300/20 to-pink-300/20 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+            <div className="absolute -bottom-10 -left-10 w-24 h-24 bg-gradient-to-br from-gray-500/20 to-gray-600/20 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
             
             {/* Image principale */}
             <div className="relative z-10">
@@ -126,7 +126,7 @@ const HeroSection = () => (
               />
               
               {/* Overlay avec effet glassmorphism */}
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-700/20 to-transparent rounded-3xl"></div>
             </div>
 
             {/* Éléments flottants */}

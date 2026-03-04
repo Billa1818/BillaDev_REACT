@@ -9,37 +9,37 @@ const FAQSection = () => {
       question: "Quels sont vos délais de livraison moyens ?",
       answer: "Les délais varient en fonction de la complexité du projet. Pour un site vitrine simple, comptez environ 2-3 semaines. Pour une application web ou mobile complexe, le délai peut s'étendre à 8-12 semaines. Je définis toujours un calendrier précis au début du projet avec des jalons intermédiaires pour vous tenir informé de l'avancement.",
       icon: Clock,
-      color: "from-blue-500 to-cyan-500"
+      color: "from-gray-600 to-gray-700"
     },
     {
       question: "Comment se déroule la collaboration ?",
       answer: "Je travaille de manière agile, avec des points réguliers pour vous tenir informé de l'avancement. Après une phase d'analyse de vos besoins, je vous propose une maquette, puis procède au développement avec des validations intermédiaires. Une fois le projet terminé, je vous accompagne dans la mise en ligne et vous forme à l'utilisation. Communication transparente et feedback continu garantis.",
       icon: MessageCircle,
-      color: "from-green-500 to-emerald-500"
+      color: "from-gray-600 to-gray-700"
     },
     {
       question: "Proposez-vous un service de maintenance ?",
       answer: "Oui, je propose plusieurs formules de maintenance pour assurer le bon fonctionnement de votre site ou application. Cela inclut les mises à jour de sécurité, les correctifs de bugs, l'assistance technique, et l'ajout de nouvelles fonctionnalités. Nous pouvons discuter des options qui correspondent le mieux à vos besoins et à votre budget.",
       icon: Wrench,
-      color: "from-purple-500 to-pink-500"
+      color: "from-gray-600 to-gray-700"
     },
     {
       question: "Comment sont calculés vos tarifs ?",
       answer: "Mes tarifs sont basés sur la complexité du projet, les fonctionnalités demandées et le temps estimé pour la réalisation. Je propose soit un tarif forfaitaire pour l'ensemble du projet, soit un tarif journalier pour des missions spécifiques. Chaque devis est personnalisé selon vos besoins. N'hésitez pas à me contacter pour un devis gratuit et sans engagement.",
       icon: DollarSign,
-      color: "from-orange-500 to-red-500"
+      color: "from-gray-600 to-gray-700"
     },
     {
       question: "Quelles technologies utilisez-vous ?",
       answer: "J'utilise les technologies les plus récentes et performantes : React.js et Next.js pour le frontend, Django et Node.js pour le backend, React Native pour les applications mobiles, et Python pour l'intelligence artificielle. Je m'adapte également à vos préférences technologiques si vous en avez des spécifiques.",
       icon: HelpCircle,
-      color: "from-indigo-500 to-purple-500"
+      color: "from-gray-600 to-gray-700"
     },
     {
       question: "Proposez-vous une formation à l'utilisation ?",
       answer: "Absolument ! Je considère qu'il est essentiel que vous puissiez utiliser votre solution en toute autonomie. Je propose des sessions de formation personnalisées pour vous et votre équipe, avec documentation complète et support technique. L'objectif est de vous rendre autonome dans l'utilisation de votre outil.",
       icon: HelpCircle,
-      color: "from-teal-500 to-cyan-500"
+      color: "from-gray-600 to-gray-700"
     }
   ];
 
@@ -48,7 +48,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="section-padding bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="section-padding bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container mx-auto px-4">
         {/* En-tête de section */}
         <div className="text-center mb-16 animate-fadeInUp">
@@ -111,17 +111,17 @@ const FAQSection = () => {
 
         {/* Section CTA */}
         <div className="mt-16 text-center animate-fadeInUp">
-          <div className="card max-w-2xl mx-auto bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+          <div className="card max-w-2xl mx-auto bg-gradient-to-r from-gray-700 to-gray-900 text-white">
             <h3 className="text-2xl font-bold mb-4">
               Vous avez d'autres questions ?
             </h3>
-            <p className="text-blue-100 mb-6">
+            <p className="text-gray-300 mb-6">
               N'hésitez pas à me contacter directement. Je serai ravi de répondre 
               à toutes vos questions et de discuter de votre projet.
             </p>
             <a 
               href="#contact" 
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-700 font-semibold rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:scale-105"
             >
               <MessageCircle className="mr-2 size-5" />
               Me poser une question

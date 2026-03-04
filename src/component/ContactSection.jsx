@@ -50,9 +50,9 @@ const ContactSection = () => {
       icon: MapPin,
       title: "Adresse",
       content: "Parakou, Bénin",
-      color: "from-blue-500 to-cyan-500",
-      bgColor: "bg-blue-50",
-      iconColor: "text-blue-600"
+      color: "from-gray-600 to-gray-700",
+      bgColor: "bg-gray-100",
+      iconColor: "text-gray-700"
     },
     {
       icon: Phone,
@@ -66,9 +66,9 @@ const ContactSection = () => {
       icon: Mail,
       title: "Email",
       content: "az9245054@gmail.com",
-      color: "from-purple-500 to-pink-500",
-      bgColor: "bg-purple-50",
-      iconColor: "text-purple-600"
+      color: "from-gray-600 to-gray-700",
+      bgColor: "bg-gray-100",
+      iconColor: "text-gray-700"
     },
     {
       icon: Clock,
@@ -108,7 +108,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 relative overflow-hidden">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 relative overflow-hidden">
       {/* Effets de fond */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-white/10 rounded-full animate-pulse"></div>
@@ -123,7 +123,7 @@ const ContactSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
             Contactez-moi
           </h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Prêt à donner vie à votre projet ? Discutons de vos besoins et créons ensemble 
             une solution sur mesure.
           </p>
@@ -137,7 +137,7 @@ const ContactSection = () => {
                 <MessageCircle className="mr-3 size-6" />
                 Parlons de votre projet
               </h3>
-              <p className="text-blue-100 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 Pour toute demande de devis ou de renseignements, n'hésitez pas à me contacter. 
                 Je vous répondrai dans les plus brefs délais et nous pourrons discuter de votre 
                 projet en détail.
@@ -159,7 +159,7 @@ const ContactSection = () => {
                       </div>
                       <h4 className="font-semibold text-white">{info.title}</h4>
                     </div>
-                    <p className="text-blue-100">{info.content}</p>
+                    <p className="text-gray-300">{info.content}</p>
                   </div>
                 );
               })}
@@ -229,20 +229,20 @@ const ContactSection = () => {
                       required
                       className="w-full px-4 py-3 rounded-xl bg-white/10 backdrop-blur-sm text-white placeholder-blue-200 border border-white/20 focus:outline-none focus:border-white/50 focus:bg-white/20 transition-all duration-300"
                       placeholder="Votre nom"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-white font-semibold mb-2">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 backdrop-blur-sm text-white placeholder-blue-200 border border-white/20 focus:outline-none focus:border-white/50 focus:bg-white/20 transition-all duration-300"
+                      />
+                      </div>
+                      <div>
+                      <label htmlFor="email" className="block text-white font-semibold mb-2">
+                       Email *
+                      </label>
+                      <input
+                       type="email"
+                       id="email"
+                       name="email"
+                       value={formData.email}
+                       onChange={handleInputChange}
+                       required
+                       className="w-full px-4 py-3 rounded-xl bg-white/10 backdrop-blur-sm text-white placeholder-gray-400 border border-white/20 focus:outline-none focus:border-white/50 focus:bg-white/20 transition-all duration-300"
                       placeholder="votre@email.com"
                     />
                   </div>
@@ -259,7 +259,7 @@ const ContactSection = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-white/10 backdrop-blur-sm text-white placeholder-blue-200 border border-white/20 focus:outline-none focus:border-white/50 focus:bg-white/20 transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-xl bg-white/10 backdrop-blur-sm text-white placeholder-gray-400 border border-white/20 focus:outline-none focus:border-white/50 focus:bg-white/20 transition-all duration-300"
                     placeholder="Sujet de votre message"
                   />
                 </div>
@@ -275,7 +275,7 @@ const ContactSection = () => {
                     onChange={handleInputChange}
                     required
                     rows="5"
-                    className="w-full px-4 py-3 rounded-xl bg-white/10 backdrop-blur-sm text-white placeholder-blue-200 border border-white/20 focus:outline-none focus:border-white/50 focus:bg-white/20 transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 rounded-xl bg-white/10 backdrop-blur-sm text-white placeholder-gray-400 border border-white/20 focus:outline-none focus:border-white/50 focus:bg-white/20 transition-all duration-300 resize-none"
                     placeholder="Décrivez votre projet ou votre demande..."
                   />
                 </div>
@@ -286,12 +286,12 @@ const ContactSection = () => {
                   className={`w-full flex items-center justify-center px-8 py-4 rounded-xl font-semibold transition-all duration-300 ${
                     isSubmitting
                       ? 'bg-gray-400 cursor-not-allowed'
-                      : 'bg-white text-blue-600 hover:bg-gray-100 hover:scale-105'
+                      : 'bg-white text-gray-700 hover:bg-gray-100 hover:scale-105'
                   }`}
                 >
                   {isSubmitting ? (
                     <>
-                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600 mr-2"></div>
+                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-gray-700 mr-2"></div>
                       Envoi en cours...
                     </>
                   ) : (
@@ -303,7 +303,7 @@ const ContactSection = () => {
                 </button>
               </form>
 
-              <p className="text-blue-200 text-sm mt-4 text-center">
+              <p className="text-gray-400 text-sm mt-4 text-center">
                 * Champs obligatoires
               </p>
             </div>

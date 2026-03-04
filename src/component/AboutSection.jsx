@@ -2,12 +2,12 @@ import React from "react";
 import { Download, MapPin, Phone, Mail, Calendar, Award, Code, Database, Cpu, ExternalLink } from "lucide-react";
 
 const AboutSection = () => (
-  <section id="apropos" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 ">
+  <section id="apropos" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 ">
     <div className="container mx-auto px-4">
       <div className="max-w-6xl mx-auto">
         {/* En-tête de section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">
             À propos de moi
           </h2>
           <p className="text-xl text-gray-600  max-w-3xl mx-auto leading-relaxed">
@@ -29,11 +29,11 @@ const AboutSection = () => (
                 />
                 
                 {/* Overlay décoratif */}
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-700/20 to-transparent rounded-3xl"></div>
               </div>
 
               {/* Éléments décoratifs */}
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 animate-pulse"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-gray-500 to-gray-700 rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-green-400 to-blue-500 rounded-full opacity-20 animate-pulse" style={{animationDelay: '1s'}}></div>
             </div>
 
@@ -41,8 +41,8 @@ const AboutSection = () => (
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="bg-white  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 ">
                 <div className="flex items-center mb-3">
-                  <div className="p-2 bg-blue-100  rounded-lg mr-3">
-                    <MapPin className="size-5 text-blue-600 " />
+                  <div className="p-2 bg-gray-200  rounded-lg mr-3">
+                    <MapPin className="size-5 text-gray-700 " />
                   </div>
                   <h3 className="font-semibold text-gray-800 ">Localisation</h3>
                 </div>
@@ -61,12 +61,12 @@ const AboutSection = () => (
 
               <div className="bg-white  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 ">
                 <div className="flex items-center mb-3">
-                  <div className="p-2 bg-purple-100  rounded-lg mr-3">
-                    <Mail className="size-5 text-purple-600 " />
+                  <div className="p-2 bg-gray-200  rounded-lg mr-3">
+                    <Mail className="size-5 text-gray-700 " />
                   </div>
                   <h3 className="font-semibold text-gray-800 ">Email</h3>
                 </div>
-                <a href="mailto:az9245054@gmail.com" className="text-gray-600  hover:text-purple-600  transition-colors">az9245054@gmail.com</a>
+                <a href="mailto:az9245054@gmail.com" className="text-gray-600  hover:text-gray-800  transition-colors">az9245054@gmail.com</a>
               </div>
 
               <div className="bg-white  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 ">
@@ -87,7 +87,7 @@ const AboutSection = () => (
               {/* Introduction */}
               <div className="bg-white  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 ">
                 <div className="flex items-center mb-4">
-                  <div className="p-3 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl mr-4">
+                  <div className="p-3 bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl mr-4">
                     <Award className="size-6 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800 ">Développeur Fullstack</h3>
@@ -107,8 +107,8 @@ const AboutSection = () => (
               {/* Spécialisations */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div className="bg-white  rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 ">
-                  <div className="p-3 bg-blue-100  rounded-xl mb-3 mx-auto w-fit">
-                    <Code className="size-6 text-blue-600 " />
+                  <div className="p-3 bg-gray-200  rounded-xl mb-3 mx-auto w-fit">
+                   <Code className="size-6 text-gray-700 " />
                   </div>
                   <h4 className="font-semibold text-gray-800  mb-2">Frontend</h4>
                   <p className="text-sm text-gray-600 ">React, Tailwind CSS, JavaScript</p>
@@ -123,8 +123,8 @@ const AboutSection = () => (
                 </div>
 
                 <div className="bg-white  rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 ">
-                  <div className="p-3 bg-purple-100  rounded-xl mb-3 mx-auto w-fit">
-                    <Cpu className="size-6 text-purple-600 " />
+                  <div className="p-3 bg-gray-200  rounded-xl mb-3 mx-auto w-fit">
+                   <Cpu className="size-6 text-gray-700 " />
                   </div>
                   <h4 className="font-semibold text-gray-800  mb-2">IA & ML</h4>
                   <p className="text-sm text-gray-600 ">Python, Machine Learning</p>
@@ -148,8 +148,8 @@ const AboutSection = () => (
               {/* Boutons CTA */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href="#contact" 
-                  className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 hover:scale-105"
+                 href="#contact" 
+                 className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-gray-700 to-gray-900 text-white font-semibold rounded-2xl hover:from-gray-800 hover:to-gray-950 transition-all duration-300 hover:scale-105"
                 >
                   <Mail className="mr-2 size-5" />
                   Me contacter
@@ -158,7 +158,7 @@ const AboutSection = () => (
                   href="https://billa-dev-react.vercel.app/" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-blue-600 text-blue-600  font-semibold rounded-2xl hover:bg-blue-600 hover:text-white transition-all duration-300"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-700 text-gray-700  font-semibold rounded-2xl hover:bg-gray-700 hover:text-white transition-all duration-300"
                 >
                   <ExternalLink className="mr-2 size-5" />
                   Voir mon portfolio

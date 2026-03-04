@@ -21,18 +21,18 @@ const ServicesSection = () => {
       title: "Développement Web",
       description: "Création de sites web et applications web responsives, modernes et optimisés pour les moteurs de recherche.",
       features: ["Responsive Design", "Performance", "SEO Optimisé"],
-      color: "from-blue-500 to-cyan-500",
-      bgColor: "bg-blue-50",
-      iconColor: "text-blue-600"
+      color: "from-gray-600 to-gray-700",
+      bgColor: "bg-gray-100",
+      iconColor: "text-gray-700"
     },
     {
       icon: Smartphone,
       title: "Applications Mobiles",
       description: "Développement d'applications mobiles cross-platform avec React Native et Capacitor pour iOS et Android.",
       features: ["Cross-platform", "Native Performance", "App Store Ready"],
-      color: "from-purple-500 to-pink-500",
-      bgColor: "bg-purple-50",
-      iconColor: "text-purple-600"
+      color: "from-gray-600 to-gray-700",
+      bgColor: "bg-gray-100",
+      iconColor: "text-gray-700"
     },
     {
       icon: Server,
@@ -66,9 +66,9 @@ const ServicesSection = () => {
       title: "Consultation",
       description: "Conseils et stratégies pour améliorer votre présence en ligne et optimiser vos solutions numériques.",
       features: ["Audit technique", "Stratégie digitale", "Formation"],
-      color: "from-indigo-500 to-purple-500",
-      bgColor: "bg-indigo-50",
-      iconColor: "text-indigo-600"
+      color: "from-gray-600 to-gray-700",
+      bgColor: "bg-gray-100",
+      iconColor: "text-gray-700"
     },
     {
       icon: Bot,
@@ -100,11 +100,11 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container mx-auto px-4">
         {/* En-tête de section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">
             Mes services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -135,7 +135,7 @@ const ServicesSection = () => {
 
                   {/* Contenu */}
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-gray-900 transition-colors duration-300">
                       {service.title}
                     </h3>
                     <p className="text-gray-600 mb-4 leading-relaxed">
@@ -167,27 +167,27 @@ const ServicesSection = () => {
 
         {/* Section CTA - Corrigée avec classes Tailwind standard */}
         <div className="mt-16 text-center">
-          <div className="bg-white rounded-3xl p-8 max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-2xl">
+          <div className="bg-white rounded-3xl p-8 max-w-4xl mx-auto bg-gradient-to-r from-gray-700 to-gray-900 text-white shadow-2xl">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
               <div className="text-center lg:text-left">
                 <h3 className="text-2xl lg:text-3xl font-bold mb-4">
                   Prêt à démarrer votre projet ?
                 </h3>
-                <p className="text-blue-100 text-lg">
+                <p className="text-gray-300 text-lg">
                   Discutons de vos besoins et créons ensemble une solution sur mesure.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
                   href="#contact" 
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-bold rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:scale-105"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-700 font-bold rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:scale-105"
                 >
                   <MessageCircle className="mr-2 size-5" />
                   Discuter du projet
                 </a>
                 <a 
                   href="#projets" 
-                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-blue-600 transition-all duration-300 hover:scale-105"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-gray-700 transition-all duration-300 hover:scale-105"
                 >
                   Voir mes réalisations
                 </a>
@@ -205,7 +205,7 @@ const ServicesSection = () => {
             { number: "24/7", label: "Support disponible" }
           ].map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+              <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent mb-2">
                 {stat.number}
               </div>
               <div className="text-gray-600 font-medium">
