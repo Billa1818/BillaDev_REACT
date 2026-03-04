@@ -93,12 +93,12 @@ const AboutSection = () => (
                   <h3 className="text-2xl font-bold text-gray-800 ">Développeur Fullstack</h3>
                 </div>
                 <p className="text-gray-600  leading-relaxed mb-4">
-                  Bonjour ! Je suis <strong>ASSOUMA Z. Billa</strong>, un développeur web passionné avec plus de 2 ans d'expérience 
+                  Bonjour ! Je suis <strong>ASSOUMA Z. Billa</strong>, un développeur web passionné avec plus de 4 ans d'expérience 
                   dans la création de solutions web innovantes. Spécialisé dans le développement fullstack, j'aime créer des 
                   applications performantes, accessibles et esthétiques.
                 </p>
                 <p className="text-gray-600  leading-relaxed">
-                  Mon expertise inclut les technologies front-end modernes comme <strong>React</strong>, <strong>Tailwind CSS</strong> 
+                  Mon expertise inclut les technologies front-end modernes comme <strong>React,React Native</strong>, <strong>Tailwind CSS</strong> 
                   ainsi que des frameworks back-end comme <strong>Django</strong>, <strong>Django REST Framework</strong>, 
                   <strong>Node.js</strong>, et l'ingénierie en intelligence artificielle avec <strong>Python</strong>.
                 </p>
