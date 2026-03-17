@@ -52,7 +52,7 @@ const FAQSection = () => {
       <div className="container mx-auto px-4">
         {/* En-tête de section */}
         <div className="text-center mb-16 animate-fadeInUp">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 gradient-text">
+          <h2 className="text-4xl lg:text-5xl text-gray-800 font-bold mb-6 ">
             Questions fréquentes
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -115,15 +115,15 @@ const FAQSection = () => {
             <h3 className="text-2xl font-bold mb-4">
               Vous avez d'autres questions ?
             </h3>
-            <p className="text-gray-300 mb-6">
+            <p className="text-gray-800 mb-6">
               N'hésitez pas à me contacter directement. Je serai ravi de répondre 
               à toutes vos questions et de discuter de votre projet.
             </p>
             <a 
               href="#contact" 
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-700 font-semibold rounded-2xl hover:bg-gray-100 transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center px-8 py-4 bg-gray-700 text-white font-semibold rounded-2xl hover:bg-gray-600 transition-all duration-300 hover:scale-105"
             >
-              <MessageCircle className="mr-2 size-5" />
+              <MessageCircle className="mr-2 size-5 " />
               Me poser une question
             </a>
           </div>

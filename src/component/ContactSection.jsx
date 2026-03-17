@@ -65,7 +65,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "az9245054@gmail.com",
+      content: "contact@assouma-billa.com",
       color: "from-gray-600 to-gray-700",
       bgColor: "bg-gray-100",
       iconColor: "text-gray-700"
@@ -73,7 +73,7 @@ const ContactSection = () => {
     {
       icon: Clock,
       title: "Disponibilité",
-      content: "Lun - Ven, 9h - 18h",
+      content: "24h/24",
       color: "from-orange-500 to-red-500",
       bgColor: "bg-orange-50",
       iconColor: "text-orange-600"
@@ -101,7 +101,7 @@ const ContactSection = () => {
     },
     {
       icon: Mail,
-      href: "mailto:az9245054@gmail.com",
+      href: "contact@assouma-billa.com",
       label: "Email",
       color: "hover:bg-red-500"
     }

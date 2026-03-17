@@ -66,7 +66,7 @@ const AboutSection = () => (
                   </div>
                   <h3 className="font-semibold text-gray-800 ">Email</h3>
                 </div>
-                <a href="mailto:az9245054@gmail.com" className="text-gray-600  hover:text-gray-800  transition-colors">az9245054@gmail.com</a>
+                <a href="mailto:contact@assouma-billa.com" className="text-gray-600  hover:text-gray-800  transition-colors">contact@assouma-billa.com</a>
               </div>
 
               <div className="bg-white  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 ">
@@ -98,9 +98,8 @@ const AboutSection = () => (
                   applications performantes, accessibles et esthétiques.
                 </p>
                 <p className="text-gray-600  leading-relaxed">
-                  Mon expertise inclut les technologies front-end modernes comme <strong>React,React Native</strong>, <strong>Tailwind CSS</strong> 
-                  ainsi que des frameworks back-end comme <strong>Django</strong>, <strong>Django REST Framework</strong>, 
-                  <strong>Node.js</strong>, et l'ingénierie en intelligence artificielle avec <strong>Python</strong>.
+                  Mon expertise inclut les technologies front-end modernes comme <strong>React,React Native</strong>, <strong>Tailwind CSS</strong>            ainsi que des frameworks back-end comme <strong>Django</strong>, <strong>Django REST Framework</strong>,  
+                   <strong> Node.js</strong>, et l'ingénierie en intelligence artificielle avec <strong>Python</strong>.
                 </p>
               </div>
 
@@ -111,7 +110,7 @@ const AboutSection = () => (
                    <Code className="size-6 text-gray-700 " />
                   </div>
                   <h4 className="font-semibold text-gray-800  mb-2">Frontend</h4>
-                  <p className="text-sm text-gray-600 ">React, Tailwind CSS, JavaScript</p>
+                  <p className="text-sm text-gray-600 ">React, React Native, Tailwind CSS</p>
                 </div>
 
                 <div className="bg-white  rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 ">
@@ -155,7 +154,7 @@ const AboutSection = () => (
                   Me contacter
                 </a>
                 <a 
-                  href="https://billa-dev-react.vercel.app/" 
+                  href="https://assouma-billa.com/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-700 text-gray-700  font-semibold rounded-2xl hover:bg-gray-700 hover:text-white transition-all duration-300"

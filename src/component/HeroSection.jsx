@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRight, Download, Github, Linkedin, Twitter, Mail, Sparkles, ExternalLink } from "lucide-react";
 
 const HeroSection = () => (
-  <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-24">
     {/* Background avec gradient animé */}
     <div className="absolute inset-0 bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 animate-pulse"></div>
     
@@ -49,7 +49,7 @@ const HeroSection = () => (
               <ArrowRight className="ml-2 size-5 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             <a 
-              href="https://billa-dev-react.vercel.app/" 
+              href="https://comeup.com/fr/@billa1818" 
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-gray-700 transition-all duration-300 hover:scale-105 backdrop-blur-sm"

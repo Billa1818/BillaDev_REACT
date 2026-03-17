@@ -22,12 +22,12 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${
+    <header className={`fixed left-2 right-2 top-2 md:left-4 md:right-4 md:top-4 z-50 transition-all duration-300 rounded-2xl ${
       scrolled 
-        ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200/50' 
+        ? 'bg-white/95 backdrop-blur-md shadow-lg border border-gray-200/50' 
         : 'bg-black/20 backdrop-blur-md shadow-md'
     }`}>
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-2 md:px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
@@ -105,10 +105,10 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className={`lg:hidden transition-all duration-300 overflow-hidden ${
+        <div className={`lg:hidden transition-all duration-300 overflow-hidden px-4 ${
           open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}>
-          <div className="flex flex-col space-y-2 mt-4 pb-4 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-lg border border-gray-200/50">
+          <div className="flex flex-col space-y-2 mt-3 pb-4 bg-white/95 backdrop-blur-md rounded-xl p-3 shadow-lg border border-gray-200/50">
             {navItems.map((item, index) => {
               const Icon = item.icon;
               return (
