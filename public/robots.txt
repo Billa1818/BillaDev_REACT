@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://assouma-billa.com/sitemap.xml
