@@ -109,7 +109,7 @@ const FAQSection = () => {
             <h3 className="text-xl md:text-2xl font-bold mb-4">
               Vous avez d'autres questions ?
             </h3>
-            <p className="text-gray-300 mb-6 text-sm md:text-base">
+            <p className="text-gray-600 mb-6 text-sm md:text-base">
               N'hésitez pas à me contacter directement. Je serai ravi de répondre 
               à toutes vos questions et de discuter de votre projet.
             </p>

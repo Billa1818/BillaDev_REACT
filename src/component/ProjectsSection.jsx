@@ -15,7 +15,7 @@ const ProjectsSection = () => {
       category: "web",
       features: ["Matching intelligent", "Paiement sécurisé", "Gestion des candidatures", "Analytics"],
       github: "https://github.com/Billa1818",
-      demo: "destinyjobs.net",
+      demo: "https://destinyjobs.net",
       status: "completed"
     },
     {
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
       category: "web",
       features: ["Dashboard interactif", "Rapports visuels", "Catégorisation", "Export PDF"],
       github: "https://github.com/Billa1818",
-      demo: "optibudget.site",
+      demo: "https://optibudget.site",
       status: "completed"
     },
     {
@@ -41,7 +41,7 @@ const ProjectsSection = () => {
       category: "web",
       features: ["Prise RDV en ligne", "Dossiers patients", "Planning médical", "Notifications"],
       github: "https://github.com/Billa1818",
-      demo: "tiae.com",
+      demo: "https://tiae.com",
       status: "in-progress"
     },
     {
@@ -83,6 +83,7 @@ const ProjectsSection = () => {
     <section id="projets" className="py-16 md:py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* En-tête */}
+        <br></br>
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">
             Mes projets récents

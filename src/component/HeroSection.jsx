@@ -106,7 +106,7 @@ const HeroSection = () => (
               <img 
                 className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-cover rounded-3xl shadow-2xl border-4 border-white/20 hover:scale-105 transition-transform duration-500" 
                 src="/img/programmation.png" 
-                alt="Développeur Web Fullstack" 
+                alt="Photo de ASSOUMA Billa, développeur web et mobile expérimenté basé au Bénin." 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-700/20 to-transparent rounded-3xl"></div>
             </div>

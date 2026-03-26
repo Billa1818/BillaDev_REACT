@@ -6,6 +6,7 @@ const AboutSection = () => (
     <div className="container mx-auto px-4">
       <div className="max-w-6xl mx-auto">
         {/* En-tête de section */}
+        <br></br>
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent">
             À propos de moi
@@ -22,9 +23,10 @@ const AboutSection = () => (
             <div className="relative flex justify-center">
               <div className="relative z-10">
                 <img 
-                  src="/img/utilisateur.png" 
+                  src="/img/me/1.png" 
                   alt="ASSOUMA Z. Billa - Développeur Fullstack" 
-                  className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto rounded-3xl shadow-2xl object-cover border-4 border-white hover:scale-105 transition-transform duration-500" 
+                  className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto rounded-3xl shadow-2xl object-cover object-top  border-4 border-white hover:scale-105 transition-transform duration-500" 
+                  style={{ objectPosition: "center 15%" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-700/20 to-transparent rounded-3xl"></div>
               </div>

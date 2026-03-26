@@ -60,13 +60,25 @@ const Header = () => {
           {/* Logo */}
           <Link
             to="/"
-            className={`text-xl md:text-2xl lg:text-3xl font-extrabold transition-all duration-300 whitespace-nowrap flex-shrink-0 ${
-              showScrolled
-                ? "bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent hover:scale-110"
-                : "text-white hover:text-yellow-300"
-            }`}
+            className="flex items-center gap-3 flex-shrink-0 group"
           >
-            ASSOUMA Billa
+            {/* Logo image locale */}
+            <img
+              src="/img/logo.svg"
+              alt="ASSOUMA Billa logo"
+              className="h-9 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-110 flex-shrink-0"
+            />
+
+            {/* Nom */}
+            <span
+              className={`text-xl md:text-2xl lg:text-3xl font-extrabold transition-all duration-300 whitespace-nowrap ${
+                showScrolled
+                  ? "bg-gradient-to-r from-gray-700 to-gray-900 bg-clip-text text-transparent"
+                  : "text-white group-hover:text-yellow-300"
+              }`}
+            >
+              ASSOUMA Billa
+            </span>
           </Link>
 
           {/* Navigation desktop */}

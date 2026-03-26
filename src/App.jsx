@@ -14,6 +14,7 @@ import NewsletterSection from "./component/NewsletterSection";
 import FAQSection from "./component/FAQSection";
 import Footer from "./component/Footer";
 import Home from "./component/Home";
+import NotFound from "./component/NotFound";
 
 function App() {
   useScrollToTop();
@@ -62,6 +63,12 @@ function App() {
           <Route path="/newsletter" element={
             <PageTransition>
               <NewsletterSection />
+            </PageTransition>
+          } />
+          {/* 404 Not Found - Route par défaut */}
+          <Route path="*" element={
+            <PageTransition>
+              <NotFound />
             </PageTransition>
           } />
         </Routes>
